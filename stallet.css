@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+
 }
 
 /* all kod för header  */
@@ -19,18 +20,157 @@ header img {
     object-fit: cover;
 }
 
-header nav {}
+header h1 {
+    font-size: xx-large;
+    letter-spacing: 8px;
+    color: rgb(10, 10, 10);
+
+}
 
 header ul {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+
 }
 
-header li {
-    display: inline;
-    margin: 5px;
+header li {}
+
+header a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
 }
 
-header a {}
+header a:hover {
+    color: white;
+}
 
 /* slutkodat med header */
+main {
+    background-color: bisque;
+    display: grid;
+}
+
+main h2 {
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+main h3 {
+    font-size: clamp(1rem, 2vw, 2rem)
+}
+
+main p {
+    line-height: 1.5em;
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, beige 100%);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+/* Main för index start  */
+
+main img {
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+}
+
+main article {
+    padding: 5px;
+
+
+
+}
+
+aside {
+    background: linear-gradient(to bottom, rgba(230, 157, 48, 0.5) 0%, rgba(230, 157, 48, 1) 100%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+aside p {
+    line-height: 3.5em;
+    padding: 20px;
+    text-align: left;
+}
+
+
+/* Fooooter börjar här */
+footer {
+    background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, rgba(230, 157, 48, 0.5) 100%);
+    color: rgb(10, 10, 10);
+
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+footer p {
+    margin: 0;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+
+}
+
+
+
+
+footer ul {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+footer li {}
+
+footer a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (min-width:768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .statement {
+        grid-column: 1/3;
+    }
+}
+
+@media (min-width:1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
