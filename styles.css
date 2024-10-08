@@ -20,7 +20,12 @@ header img {
     object-fit: cover;
 }
 
-header nav {}
+header h1 {
+    font-size: xx-large;
+    letter-spacing: 8px;
+    color: rgb(10, 10, 10);
+
+}
 
 header ul {
     margin: 0;
@@ -29,10 +34,17 @@ header ul {
 
 header li {
     display: inline;
-    margin: 5px;
+    margin: 10px;
 }
 
-header a {}
+header a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+}
 
 /* slutkodat med header */
 main {
@@ -44,13 +56,17 @@ main h2 {
     font-size: clamp(1rem, 4vw, 3rem);
 }
 
+main h3 {
+    font-size: clamp(1rem, 2vw, 2rem)
+}
+
 main p {
     line-height: 1.5em;
     padding: 20px;
 }
 
 section {
-    background-color: beige;
+    background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, beige 100%);
     margin: 10px;
     border-radius: 20px;
 }
@@ -82,12 +98,14 @@ aside {
 aside p {
     line-height: 3.5em;
     padding: 20px;
+    text-align: left;
 }
 
 
+/* Fooooter börjar här */
 footer {
     background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, rgba(230, 157, 48, 0.5) 100%);
-    color: white;
+    color: rgb(10, 10, 10);
 
     text-align: center;
     padding: 20px 0;
@@ -114,14 +132,26 @@ footer ul {
 
 }
 
+
+
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
 footer li {
     display: inline;
-    margin: 0 15px;
+    margin: 10px;
 }
 
 footer a {
-    color: white;
+    color: rgb(10, 10, 10);
     text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
 }
 
 @media (min-width:768px) {

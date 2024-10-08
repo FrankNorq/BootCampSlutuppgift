@@ -1,0 +1,36 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* all kod för header  */
+header {
+    background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, rgba(230, 157, 48, 0.5) 100%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+header nav {}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 5px;
+}
+
+header a {}
+
+/* slutkodat med header */
