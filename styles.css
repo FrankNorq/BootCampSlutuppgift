@@ -56,7 +56,7 @@ section {
 }
 
 
-
+/* Main för index start  */
 
 main img {
     height: auto;
@@ -84,33 +84,34 @@ aside p {
     padding: 20px;
 }
 
+
 footer {
     background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, rgba(230, 157, 48, 0.5) 100%);
     color: white;
-    /* Gör texten vit för kontrast */
+
     text-align: center;
     padding: 20px 0;
-    /* Justera padding efter behov */
+
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    /* Vertikal layout */
+
     align-items: center;
-    /* Centrerar innehållet horisontellt */
+
 }
 
 footer p {
     margin: 0;
-    /* Ta bort standardmarginal */
+
 }
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
-    /* Marginal för avstånd mellan text och lista */
+
 }
 
 footer li {
@@ -136,6 +137,8 @@ footer a {
     aside {
         grid-column: 1/3;
     }
+
+
 }
 
 
@@ -164,7 +167,6 @@ footer a {
         grid-column: 3/5;
     }
 
-    aside p {}
 
 
 }
