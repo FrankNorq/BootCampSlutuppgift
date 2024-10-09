@@ -52,6 +52,7 @@ header a:hover {
 main {
     background-color: bisque;
     display: grid;
+
 }
 
 main h2 {
@@ -108,55 +109,22 @@ aside p {
 footer {
     background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, rgba(230, 157, 48, 0.5) 100%);
     color: rgb(10, 10, 10);
-
-    text-align: center;
-    padding: 20px 0;
-
-}
-
-.footer-content {
     display: flex;
     flex-direction: column;
 
-    align-items: center;
-
-}
-
-footer p {
-    margin: 0;
-
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-
 }
 
 
-
-
-footer ul {
-
+footer section {
+    background: linear-gradient(to bottom, rgba(230, 157, 48, 1) 0%, beige 100%);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+    flex-direction: column;
+
+
 }
 
-footer li {}
 
-footer a {
-    color: rgb(10, 10, 10);
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: white;
-}
-
-@media (min-width:768px) {
+footer @media (min-width:768px) {
     main {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -199,6 +167,11 @@ footer a:hover {
         grid-column: 3/5;
     }
 
+    footer section {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
 
 
 }
